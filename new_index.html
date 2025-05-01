@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saurabh Kumar - CV</title>
+    <style>
+        /* CSS Reset and Base Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background-color: #f5f5f5;
+            color: #333;
+            line-height: 1.6;
+            padding: 20px;
+        }
+        
+        .cv-container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: white;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            padding: 40px;
+            border-radius: 8px;
+        }
+        
+        /* Header Styles */
+        .header {
+            border-bottom: 2px solid #2563eb;
+            padding-bottom: 20px;
+            margin-bottom: 30px;
+        }
+        
+        .name {
+            font-size: 32px;
+            color: #1e40af;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        
+        .title {
+            font-size: 18px;
+            color: #4b5563;
+            margin-bottom: 15px;
+            font-weight: 600;
+        }
+        
+        .contact-info {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            font-size: 14px;
+        }
+        
+        .contact-info a {
+            color: #2563eb;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        
+        .contact-info a:hover {
+            color: #1e40af;
+            text-decoration: underline;
+        }
+        
+        /* Section Styles */
+        .section {
+            margin-bottom: 30px;
+        }
+        
+        .section-title {
+            font-size: 22px;
+            color: #1e40af;
+            border-bottom: 1px solid #cbd5e1;
+            padding-bottom: 5px;
+            margin-bottom: 15px;
+            font-weight: 600;
+        }
+        
+        /* Profile Section */
+        .profile {
+            line-height: 1.7;
+            margin-bottom: 30px;
+        }
+        
+        /* Experience Styles */
+        .job {
+            margin-bottom: 25px;
+        }
+        
+        .job-header {
+            margin-bottom: 10px;
+        }
+        
+        .job-title {
+            font-size: 18px;
+            font-weight: 600;
+            color: #374151;
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+        }
+        
+        .job-company {
+            font-weight: bold;
+        }
+        
+        .job-location {
+            font-style: italic;
+            color: #6b7280;
+            margin-top: 2px;
+            font-size: 14px;
+        }
+        
+        .project {
+            margin-bottom: 20px;
+            padding-left: 2px;
+        }
+        
+        .project-title {
+            font-weight: 600;
+            margin-bottom: 5px;
+            color: #374151;
+        }
+        
+        .project-detail {
+            margin-bottom: 5px;
+            margin-left: 20px;
+            position: relative;
+        }
+        
+        .project-detail:before {
+            content: "•";
+            position: absolute;
+            left: -15px;
+            color: #2563eb;
+        }
+        
+        .detail-category {
+            font-weight: 600;
+        }
+        
+        .technical {
+            font-style: italic;
+            margin-top: 10px;
+            font-size: 14px;
+            color: #6b7280;
+            padding-left: 20px;
+        }
+        
+        /* Education Styles */
+        .education-item {
+            margin-bottom: 15px;
+        }
+        
+        .education-title {
+            font-weight: 600;
+            color: #374151;
+        }
+        
+        .education-detail {
+            margin-left: 20px;
+            position: relative;
+        }
+        
+        .education-detail:before {
+            content: "•";
+            position: absolute;
+            left: -15px;
+            color: #2563eb;
+        }
+        
+        /* Certification and Language Styles */
+        .cert-list, .lang-list {
+            list-style-type: none;
+        }
+        
+        .cert-list li, .lang-list li {
+            margin-bottom: 5px;
+            position: relative;
+            padding-left: 20px;
+        }
+        
+        .cert-list li:before, .lang-list li:before {
+            content: "•";
+            position: absolute;
+            left: 0;
+            color: #2563eb;
+        }
+        
+        /* Footer */
+        .footer {
+            text-align: right;
+            font-style: italic;
+            margin-top: 30px;
+            color: #6b7280;
+            font-size: 14px;
+        }
+        
+        /* Responsive Design */
+        @media (max-width: 600px) {
+            .cv-container {
+                padding: 20px;
+            }
+            
+            .name {
+                font-size: 26px;
+            }
+            
+            .job-title {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="cv-container">
+        <div class="header">
+            <h1 class="name">SAURABH KUMAR</h1>
+            <p class="title">Lead Data Scientist & Cloud Architect</p>
+            <div class="contact-info">
+                <span>Fritz-Kirsch-Zeile 3, 12459 Berlin</span>
+                <span>+49 1748957344</span>
+                <span>sroder@gmail.com</span>
+                <a href="https://www.linkedin.com/in/saurabhkumarsroder/" target="_blank">LinkedIn Profile</a>
+            </div>
+        </div>
+
+        <div class="section profile">
+            <h2 class="section-title">PROFESSIONAL PROFILE</h2>
+            <p>
+                Innovative Data Scientist with 11+ years of experience transforming business challenges into data-driven solutions across automotive, insurance, and telecommunications industries. Successfully delivered end-to-end machine learning solutions that reduced processing time by 40% and improved prediction accuracy by 35% for Fortune 500 clients including BMW and Munich Re. Expertise in cloud architecture, NLP, and implementing production-grade ML systems.
+            </p>
+        </div>
+
+        <div class="section">
+            <h2 class="section-title">PROFESSIONAL EXPERIENCE</h2>
+            
+            <div class="job">
+                <div class="job-header">
+                    <div class="job-title">
+                        <span class="job-company">NTT DATA GmbH | LEAD IT CONSULTANT – DATA SCIENCE</span>
+                    </div>
+                    <div class="job-location">Berlin, Germany | October 2022 – Present</div>
+                </div>
+                
+                <div class="project">
+                    <div class="project-title">BMW Teleservice Lead Management Project</div>
+                    <div class="project-detail"><span class="detail-category">Challenge:</span> BMW needed to analyze millions of vehicle telemetry data points to predict maintenance needs but lacked scalable infrastructure.</div>
+                    <div class="project-detail"><span class="detail-category">Action:</span> Architected and implemented an AWS cloud solution that processes 500TB+ of vehicle telemetry data daily through optimized ETL pipelines.</div>
+                    <div class="project-detail"><span class="detail-category">Result:</span> Reduced data processing time by 60%, enabling predictive maintenance alerts that decreased customer service calls by 25%.</div>
+                    <div class="technical">Technical Environment: Python, PySpark, AWS (EC2, EMR, Step Functions, Lambda, CloudWatch, Glue, Athena), Time Series Analysis (ARIMA), Terraform, Docker, Git</div>
+                </div>
+            </div>
+            
+            <div class="job">
+                <div class="job-header">
+                    <div class="job-title">
+                        <span class="job-company">MSG SYSTEMS/MINISPHERE GmbH | DATA SCIENTIST</span>
+                    </div>
+                    <div class="job-location">Munich, Germany | February 2019 – September 2022</div>
+                </div>
+                
+                <div class="project">
+                    <div class="project-title">ProfileMap - Internal HR Product Development</div>
+                    <div class="project-detail"><span class="detail-category">Challenge:</span> Company struggled with matching employee skills to project requirements, resulting in 30% resource allocation inefficiency.</div>
+                    <div class="project-detail"><span class="detail-category">Action:</span> Designed and implemented NLP models that analyzed unstructured resume data to extract and categorize professional skills.</div>
+                    <div class="project-detail"><span class="detail-category">Result:</span> Improved resource allocation efficiency by 40%, reduced project staffing time from 2 weeks to 3 days, and increased consultant utilization by 15%.</div>
+                </div>
+                
+                <div class="project">
+                    <div class="project-title">Munich Re Machine Learning Project</div>
+                    <div class="project-detail"><span class="detail-category">Challenge:</span> Insurance claim document processing required 4+ hours of manual review per complex case.</div>
+                    <div class="project-detail"><span class="detail-category">Action:</span> Developed an ML solution incorporating text extraction, named entity recognition, and document comparison capabilities.</div>
+                    <div class="project-detail"><span class="detail-category">Result:</span> Automated 65% of document processing tasks, reducing processing time by 75% and increasing accuracy from 82% to 94%.</div>
+                    <div class="project-detail"><span class="detail-category">Leadership:</span> Served as Scrum Master for a cross-functional team of 8 members, consistently delivering sprints on time while maintaining quality.</div>
+                    <div class="technical">Technical Environment: Python, TensorFlow, scikit-learn, Pandas, NumPy, Knowledge Graphs, NLP (RNN, LSTM), FastAPI, Docker, CI/CD pipelines</div>
+                </div>
+            </div>
+            
+            <div class="job">
+                <div class="job-header">
+                    <div class="job-title">
+                        <span class="job-company">VODAFONE-ARICENT | SENIOR IT CONSULTANT</span>
+                    </div>
+                    <div class="job-location">London, UK | October 2010 – March 2016</div>
+                </div>
+                
+                <div class="project">
+                    <div class="project-title">Network Reliability Enhancement Project</div>
+                    <div class="project-detail"><span class="detail-category">Challenge:</span> Manual testing of telecommunication call scenarios was time-consuming and error-prone.</div>
+                    <div class="project-detail"><span class="detail-category">Action:</span> Designed and implemented an automated testing framework for 3G and 4G network scenarios.</div>
+                    <div class="project-detail"><span class="detail-category">Result:</span> Increased testing efficiency by 300%, reduced testing costs by €1.2M annually, and improved fault detection by 45%.</div>
+                    <div class="project-detail"><span class="detail-category">Impact:</span> Framework became company standard across 5 countries, with 200+ engineers trained on the system.</div>
+                    <div class="technical">Technical Environment: Python, SQL, REST APIs, Automated Testing Frameworks</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2 class="section-title">EDUCATION</h2>
+            
+            <div class="education-item">
+                <div class="education-title">Master of Science in Computer Science - Data Science</div>
+                <div class="job-location">University of Passau, Germany | 2016-2018</div>
+                <div class="education-detail">Thesis: "Deep Learning Approaches for Natural Language Processing in Multilingual Environments"</div>
+                <div class="education-detail">GPA: 1.7 (German scale)</div>
+            </div>
+            
+            <div class="education-item">
+                <div class="education-title">Bachelor of Science in Computer Science</div>
+                <div class="job-location">Birla Institute of Technology, India | 2006-2010</div>
+                <div class="education-detail">Graduated with Distinction</div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2 class="section-title">CERTIFICATIONS</h2>
+            <ul class="cert-list">
+                <li>AWS Certified Solution Architect (2023)</li>
+                <li>AWS Machine Learning Specialty (2022)</li>
+                <li>Prince2 Foundation (2021)</li>
+                <li>Machine Learning Engineer Nanodegree, Udacity (2017)</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2 class="section-title">LANGUAGES</h2>
+            <ul class="lang-list">
+                <li>German: C1 (Goethe-Institut, Munich 2019)</li>
+                <li>English: Business Fluent</li>
+                <li>Hindi: Native</li>
+            </ul>
+        </div>
+
+        <div class="footer">
+            Berlin, 14.06.2024
+        </div>
+    </div>
+</body>
+</html>
